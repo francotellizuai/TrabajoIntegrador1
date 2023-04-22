@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\TPINTEGRADOR1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {}
+    "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\TPINTEGRADOR1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {
+    "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\TPINTEGRADOR1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
+        "projectUniqueName": "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
         "projectName": "TPINTEGRADOR1",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\TPINTEGRADOR1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
+        "projectPath": "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\TPINTEGRADOR1\\TPINTEGRADOR1\\obj\\",
+        "outputPath": "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

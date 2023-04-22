@@ -60,9 +60,14 @@ namespace TPINTEGRADOR1
 
         private void guardarButton_Click(object sender, EventArgs e)
         {
-            Alumno alumno = new Alumno(Int32.Parse(legajoText.Text), nombreText.Text, apellidoText.Text, DateTime.Parse(fechaNacimientoDate.Text), DateTime.Parse(fechaIngresoDate.Text), activoCheck.Checked, Int32.Parse(totalMateriasBox.Text));
-            parentForm.AgregaAlumno(alumno);
-            this.Close();
+            int lejago;
+            if (int.TryParse(legajoText.Text, out lejago))
+            {
+                Alumno alumno = new Alumno(lejago, nombreText.Text, apellidoText.Text, DateTime.Parse(fechaNacimientoDate.Text), DateTime.Parse(fechaIngresoDate.Text), activoCheck.Checked, Int32.Parse(totalMateriasBox.Text));
+                parentForm.AgregaAlumno(alumno);
+                this.Close();
+            }
+
         }
 
     }

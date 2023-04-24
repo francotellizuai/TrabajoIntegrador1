@@ -84,7 +84,7 @@ namespace TPINTEGRADOR1
 
         public int Edad()
         {
-            TimeSpan edadIngreso = this.fecha_ingreso.Subtract(this.fecha_nacimiento);
+            TimeSpan edadIngreso = DateTime.Now.Subtract(this.fecha_nacimiento);
             return Convert.ToInt32(edadIngreso.TotalDays / 365);
         }
 

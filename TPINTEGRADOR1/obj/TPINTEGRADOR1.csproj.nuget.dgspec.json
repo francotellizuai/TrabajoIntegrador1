@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\TrabajoIntegrador1-main\\TrabajoIntegrador1-main\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {}
   },
   "projects": {
-    "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TrabajoIntegrador1-main\\TrabajoIntegrador1-main\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TrabajoIntegrador1-main\\TrabajoIntegrador1-main\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
         "projectName": "TPINTEGRADOR1",
-        "projectPath": "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TrabajoIntegrador1-main\\TrabajoIntegrador1-main\\TPINTEGRADOR1\\TPINTEGRADOR1.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\TrabajoIntegrador1\\TPINTEGRADOR1\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TrabajoIntegrador1-main\\TrabajoIntegrador1-main\\TPINTEGRADOR1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

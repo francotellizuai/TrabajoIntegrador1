@@ -1,4 +1,4 @@
-using System.Windows.Forms;
+ï»¿using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TPINTEGRADOR1
@@ -18,9 +18,8 @@ namespace TPINTEGRADOR1
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
-            antiguedadText.Text = "";
-            materiasNoAprobadasText.Text = "";
-            edadText.Text = "";
+            borrarInformacionUsuario();
+
             viewAlumnos.CellClick += ViewAlumnos_CellClick;
             viewAlumnos.DataSource = bindingSource;
             viewAlumnos.AutoGenerateColumns = true;
@@ -41,6 +40,14 @@ namespace TPINTEGRADOR1
             {
                 bindingSource.DataSource = listaAlumnos;
                 viewAlumnos.DataSource = bindingSource;
+                viewAlumnos.Columns[3].Visible = false;
+                viewAlumnos.Columns[4].Visible = false;
+                viewAlumnos.Columns[6].Visible = false;
+
+                viewAlumnos.Columns[0].Width = 100;
+
+                borrarInformacionUsuario();
+
             }
 
         }
@@ -50,7 +57,7 @@ namespace TPINTEGRADOR1
             int index = listaAlumnos.FindIndex(a => a.Legajo == alumno.Legajo);
             if (index != -1)
             {
-                FormConfirmacion formConfirmacion = new FormConfirmacion("El alumno con legajo " + alumno.Legajo.ToString() +" ya existe. ¿Desea actualizar sus datos?");
+                FormConfirmacion formConfirmacion = new FormConfirmacion("El alumno con legajo " + alumno.Legajo.ToString() + " ya existe. Â¿Desea actualizar sus datos?");
                 if (formConfirmacion.ShowDialog() == DialogResult.Yes)
                 {
                     listaAlumnos[index] = alumno;
@@ -72,15 +79,16 @@ namespace TPINTEGRADOR1
         {
             DataGridViewRow filaSeleccionada = viewAlumnos.CurrentRow;
             if (filaSeleccionada != null)
-             {
+            {
                 string legajo = filaSeleccionada.Cells[0].Value.ToString();
-                FormConfirmacion formConfirmacion = new FormConfirmacion("¿Seguro de borrar el alumno "+ legajo + "?");
+                FormConfirmacion formConfirmacion = new FormConfirmacion("Â¿Seguro de borrar el alumno " + legajo + "?");
                 if (formConfirmacion.ShowDialog() == DialogResult.Yes)
                 {
                     listaAlumnos.RemoveAll(objeto => objeto.Legajo == Int32.Parse(legajo));
+                    borrarInformacionUsuario();
                     refreshViewAlumnos();
                 }
-             }
+            }
         }
 
         private void actualizarAlumno_Click(object sender, EventArgs e)
@@ -103,7 +111,7 @@ namespace TPINTEGRADOR1
             Alumno alumno = listaAlumnos.Find(a => a.Legajo == Int32.Parse(legajo));
             if (!legajo.Equals("0"))
             {
-                antiguedadText.Text = "Antiguedad en años: " + alumno.Antiguedad(DateTime.Now).ToString();
+                antiguedadText.Text = "Antiguedad en aÃ±os: " + alumno.Antiguedad(DateTime.Now).ToString();
                 materiasNoAprobadasText.Text = "Materias no aprobadas: " + alumno.MateriasNoAprobadas();
                 edadText.Text = "Edad: " + alumno.Edad(); ;
 
@@ -116,5 +124,11 @@ namespace TPINTEGRADOR1
             }
         }
 
+        private void borrarInformacionUsuario()
+        {
+            antiguedadText.Text = "";
+            materiasNoAprobadasText.Text = "";
+            edadText.Text = "";
+        }
     }
 }

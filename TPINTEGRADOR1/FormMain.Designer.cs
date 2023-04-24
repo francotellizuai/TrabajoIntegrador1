@@ -77,7 +77,7 @@
             viewAlumnos.Location = new Point(28, 206);
             viewAlumnos.Name = "viewAlumnos";
             viewAlumnos.RowTemplate.Height = 25;
-            viewAlumnos.Size = new Size(736, 223);
+            viewAlumnos.Size = new Size(474, 223);
             viewAlumnos.TabIndex = 3;
             // 
             // label1
@@ -93,7 +93,7 @@
             // antiguedadText
             // 
             antiguedadText.AutoSize = true;
-            antiguedadText.Location = new Point(28, 173);
+            antiguedadText.Location = new Point(563, 206);
             antiguedadText.Name = "antiguedadText";
             antiguedadText.Size = new Size(38, 15);
             antiguedadText.TabIndex = 5;
@@ -102,7 +102,7 @@
             // materiasNoAprobadasText
             // 
             materiasNoAprobadasText.AutoSize = true;
-            materiasNoAprobadasText.Location = new Point(281, 173);
+            materiasNoAprobadasText.Location = new Point(563, 261);
             materiasNoAprobadasText.Name = "materiasNoAprobadasText";
             materiasNoAprobadasText.Size = new Size(38, 15);
             materiasNoAprobadasText.TabIndex = 6;
@@ -111,7 +111,7 @@
             // edadText
             // 
             edadText.AutoSize = true;
-            edadText.Location = new Point(563, 173);
+            edadText.Location = new Point(563, 314);
             edadText.Name = "edadText";
             edadText.Size = new Size(38, 15);
             edadText.TabIndex = 7;

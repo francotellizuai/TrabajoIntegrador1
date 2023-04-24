@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            tituloText = new Label();
             label2 = new Label();
             legajoText = new TextBox();
             nombreText = new TextBox();
@@ -46,16 +46,16 @@
             guardarButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // tituloText
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ImageAlign = ContentAlignment.MiddleRight;
-            label1.Location = new Point(234, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(223, 32);
-            label1.TabIndex = 0;
-            label1.Text = "AGREGAR ALUMNO";
+            tituloText.AutoSize = true;
+            tituloText.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            tituloText.ImageAlign = ContentAlignment.MiddleRight;
+            tituloText.Location = new Point(234, 18);
+            tituloText.Name = "tituloText";
+            tituloText.Size = new Size(223, 32);
+            tituloText.TabIndex = 0;
+            tituloText.Text = "AGREGAR ALUMNO";
             // 
             // label2
             // 
@@ -203,7 +203,7 @@
             Controls.Add(label3);
             Controls.Add(legajoText);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(tituloText);
             Name = "FormAgregarAlumno";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Alumno";
@@ -214,7 +214,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label tituloText;
         private Label label2;
         private TextBox legajoText;
         private TextBox nombreText;

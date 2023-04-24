@@ -42,7 +42,7 @@ namespace TPINTEGRADOR1
                 activoCheck.Checked = false;
             }
             totalMateriasBox.Text = alumno.Cantidad_Materias_Aprobadas.ToString();
-
+            tituloText.Text = "ACTUALIZAR ALUMNO";
         }
 
         private void FormAgregarAlumno_Load(object sender, EventArgs e)

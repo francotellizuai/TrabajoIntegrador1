@@ -13,7 +13,6 @@ namespace TPINTEGRADOR1
         private string apellido;
         private DateTime fecha_nacimiento;
         private DateTime fecha_ingreso;
-        private int edad;
         private bool activo;
         private int cantidad_materias_aprobadas;
 
